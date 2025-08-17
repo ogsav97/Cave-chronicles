@@ -1,0 +1,23 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#101418;color:#eef1f4;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial}
+#game-root{position:fixed;inset:0;overflow:hidden}
+canvas{display:block}
+#hud{position:fixed;left:0;right:0;top:0;padding:10px;pointer-events:none}
+#stats{display:flex;gap:12px;flex-wrap:wrap;background:rgba(0,0,0,.35);backdrop-filter:blur(4px);padding:8px 12px;border-radius:12px;max-width:100vw}
+#prompts{position:fixed;left:50%;top:60px;transform:translateX(-50%);background:rgba(0,0,0,.35);padding:6px 10px;border-radius:12px;pointer-events:auto}
+#prompt-text{font-weight:600}
+#buttons{position:fixed;right:10px;top:10px;display:flex;gap:8px;pointer-events:auto}
+.pill{appearance:none;border:0;border-radius:999px;background:#2a73ff;color:white;padding:8px 14px;font-weight:700;box-shadow:0 6px 18px rgba(42,115,255,.35);cursor:pointer}
+.pill:active{transform:translateY(1px)}
+.panel{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);background:#12161c;border:1px solid #283040;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.5);padding:16px;width:min(92vw,540px);max-height:80vh;overflow:auto}
+.panel h2{margin-bottom:10px}
+.recipes{display:flex;gap:10px;flex-wrap:wrap}
+.recipe{background:#1b2230;color:#dbe3f3;border:1px solid #33405a;border-radius:12px;padding:10px 12px;cursor:pointer}
+.hidden{display:none}
+
+#mobile-ui{position:fixed;inset:0;pointer-events:none}
+#joystick-left{position:fixed;left:18px;bottom:18px;width:140px;height:140px;border-radius:50%;background:rgba(0,0,0,.25);backdrop-filter:blur(3px);pointer-events:auto}
+#look-pad{position:fixed;right:18px;bottom:18px;width:40vw;max-width:360px;height:40vh;max-height:260px;background:rgba(0,0,0,0);pointer-events:auto}
+#action-btn{position:fixed;right:24px;bottom:24px;width:60px;height:60px;border-radius:50%;border:0;background:#2a73ff;color:#fff;font-weight:800;pointer-events:auto}
+#place-btn,#cancel-btn{position:fixed;right:24px;bottom:92px;width:88px;height:40px;border-radius:999px;border:0;background:#00b27a;color:#fff;font-weight:800;margin-left:8px;pointer-events:auto}
+#cancel-btn{right:120px;background:#d04}

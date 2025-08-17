@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Caveman: 3000 BC — Free Roam Survival</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="game-root"></div>
+  <div id="hud">
+    <div id="stats">
+      <span>🌲 Wood: <b id="wood">0</b></span>
+      <span>🪨 Stone: <b id="stone">0</b></span>
+      <span>🍖 Hunger: <b id="hunger">100</b></span>
+      <span>💧 Thirst: <b id="thirst">100</b></span>
+      <span>🕓 Day: <b id="day">1</b></span>
+    </div>
+    <div id="prompts"><span id="prompt-text"></span></div>
+    <div id="buttons">
+      <button id="btn-build" class="pill">Build</button>
+      <button id="btn-inventory" class="pill">Craft</button>
+      <button id="btn-help" class="pill">Help</button>
+    </div>
+  </div>
+
+  <div id="crafting" class="panel hidden">
+    <h2>Crafting</h2>
+    <div class="recipes">
+      <button class="recipe" data-item="campfire">🔥 Campfire<br><small>5 Wood</small></button>
+      <button class="recipe" data-item="hut">🏚️ Hut<br><small>20 Wood, 10 Stone</small></button>
+      <button class="recipe" data-item="spear">🗡️ Spear<br><small>3 Wood, 2 Stone</small></button>
+    </div>
+    <button id="close-crafting" class="pill">Close</button>
+  </div>
+
+  <div id="help" class="panel hidden">
+    <h2>How to Play</h2>
+    <ul>
+      <li><b>Move:</b> WASD / Left Joystick (mobile)</li>
+      <li><b>Look:</b> Mouse drag / Right side drag (mobile)</li>
+      <li><b>Interact:</b> E or tap prompt</li>
+      <li><b>Build Mode:</b> Click <i>Build</i> → choose item in <i>Craft</i> then place ghost by tapping ground. Confirm with <b>Place</b>.</li>
+      <li><b>Gather:</b> Approach trees/rocks and press E (or tap prompt) to collect resources.</li>
+      <li><b>Survive:</b> Hunger & thirst drop over time. Stay alive!</li>
+    </ul>
+    <button id="close-help" class="pill">Close</button>
+  </div>
+
+  <div id="mobile-ui">
+    <div id="joystick-left"></div>
+    <div id="look-pad"></div>
+    <button id="action-btn">E</button>
+    <button id="place-btn" class="hidden">Place</button>
+    <button id="cancel-btn" class="hidden">Cancel</button>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
