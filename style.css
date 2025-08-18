@@ -14,7 +14,6 @@ canvas{display:block}
 .recipes{display:flex;gap:10px;flex-wrap:wrap}
 .recipe{background:#1b2230;color:#dbe3f3;border:1px solid #33405a;border-radius:12px;padding:10px 12px;cursor:pointer}
 .hidden{display:none}
-
 #mobile-ui{position:fixed;inset:0;pointer-events:none}
 #joystick-left{position:fixed;left:18px;bottom:18px;width:140px;height:140px;border-radius:50%;background:rgba(0,0,0,.25);backdrop-filter:blur(3px);pointer-events:auto}
 #look-pad{position:fixed;right:18px;bottom:18px;width:40vw;max-width:360px;height:40vh;max-height:260px;background:rgba(0,0,0,0);pointer-events:auto}
